@@ -38,6 +38,8 @@ include_directories("${PTHREAD_INCLUDE_DIR}")
 
 add_library (EventsSet SHARED ${SOURCES} ${HEADERS})
 
+target_compile_definitions(EventsSet PRIVATE _REENTRANT)
+
 install (TARGETS EventsSet DESTINATION lib)
 install (FILES ${HEADERS} DESTINATION include)
 
