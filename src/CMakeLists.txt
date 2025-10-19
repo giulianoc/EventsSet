@@ -36,7 +36,19 @@ include_directories("${ERROR_INCLUDE_DIR}")
 include_directories("${DATETIME_INCLUDE_DIR}")
 include_directories("${PTHREAD_INCLUDE_DIR}")
 
+if(APPLE)
+	link_directories("${ERROR_LIB_DIR}")
+	link_directories("${PTHREAD_LIB_DIR}")
+	link_directories("${DATETIME_LIB_DIR}")
+endif()
+
 add_library (EventsSet SHARED ${SOURCES} ${HEADERS})
+
+if(APPLE)
+	target_link_libraries(EventsSet PRIVATE Error)
+	target_link_libraries(EventsSet PRIVATE PThread)
+	target_link_libraries(EventsSet PRIVATE Datetime)
+endif()
 
 target_compile_definitions(EventsSet PRIVATE _REENTRANT)
 
