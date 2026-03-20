@@ -4,7 +4,6 @@
 // Permission granted to copy and distribute provided this
 // comment is retained at the top.
 //
-// $Id: my_hash_map.h,v 1.3 2009/12/09 21:35:27 giuliano Exp $
 //
 //
 // *** IMPORTANT: When you want to compile with debugging assertions

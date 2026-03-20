@@ -1,6 +1,4 @@
 /*
- Copyright (C) Giuliano Catrambone (giuliano.catrambone@catrasoftware.it)
-
  This program is free software; you can redistribute it and/or 
  modify it under the terms of the GNU General Public License 
  as published by the Free Software Foundation; either 
@@ -316,11 +314,11 @@
 
 			/**
 				Questo metodo ritorna il puntatore al primo evento.
-				Ricorda che l'EventsSet è ordinato secondo
+				Ricorda che l'EventsSet ï¿½ ordinato secondo
 				la chiave dell'evento.
 			
 				Il parametro bBlocking indica se il metodo deve rimanere
-				bloccato al suo interno finchè non viene inserito
+				bloccato al suo interno finchï¿½ non viene inserito
 				un evento nel caso in cui non ci siano eventi nel set.
 				I parametri ulSecondsToBlock e ulAdditionalMilliSecondsToBlock
 				vengono considerati nel caso che bBlocking sia true.
@@ -333,7 +331,7 @@
 
 			/**
 				Questo metodo ritorna il puntatore al primo evento.
-				Ricorda che l'EventsSet è ordinato socondo la chiave dell'evento
+				Ricorda che l'EventsSet ï¿½ ordinato socondo la chiave dell'evento
 				Il metodo rimuove anche l'evento ritornato.
 			
 				Nota bene che l'evento non viene de-allocato, ma viene
@@ -344,7 +342,7 @@
 				operazione da fare.
 			
 				Il parametro bBlocking indica se il metodo deve rimanere
-				bloccato al suo interno finchè non viene inserito
+				bloccato al suo interno finchï¿½ non viene inserito
 				un evento nel caso in cui non ci siano eventi nel set.
 				I parametri ulSecondsToBlock e ulAdditionalMilliSecondsToBlock
 				vengono considerati nel caso che bBlocking sia true.
