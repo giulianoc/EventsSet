@@ -53,5 +53,7 @@ endif()
 target_compile_definitions(EventsSet PRIVATE _REENTRANT)
 
 install (TARGETS EventsSet DESTINATION lib)
-install (FILES ${HEADERS} DESTINATION include)
+if(NOT DEFINED EVENTSSET_INSTALL_HEADERS OR EVENTSSET_INSTALL_HEADERS)
+	install(FILES ${HEADERS} DESTINATION include)
+endif()
 
